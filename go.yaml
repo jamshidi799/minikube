@@ -34,4 +34,3 @@ spec:
     - protocol: TCP
       port: 8090
       targetPort: 8080
-# TODO: load balancing not work

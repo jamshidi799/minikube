@@ -1,9 +1,13 @@
+# source: https://kubernetes.io/docs/tutorials/configuration/configure-redis-using-configmap/
+
 apiVersion: v1
 kind: ConfigMap
 metadata:
   name: example-redis-config
 data:
-  redis-config: ""
+  redis-config: |
+    maxmemory 2mb
+    maxmemory-policy allkeys-lru
 
 ---
 apiVersion: v1
